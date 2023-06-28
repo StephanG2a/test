@@ -27,7 +27,7 @@ export default function Page1() {
                     attributes: {
                       "data-key": `${i}-${j}`,
                     },
-                    children: [data[`${i}-${j}`] ?? "test"],
+                    children: [data[`${i}-${j}`] ?? "text"],
                     events: {
                       click: changeTextIntoInput,
                     },
