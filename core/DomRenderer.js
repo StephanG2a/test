@@ -1,5 +1,8 @@
 export default function generateStructure(structure) {
   const element = document.createElement(structure.type);
+  if (typeof structure === "function") {
+    structure = structure();
+  }
   if (structure.attributes) {
     for (let attrName in structure.attributes) {
       if (attrName.startsWith("data-")) {

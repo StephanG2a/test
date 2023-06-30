@@ -3,7 +3,7 @@ import Button from "../components/Button.js";
 import Compteur from "../components/Compteur.js";
 import { Link } from "../components/Link.js";
 
-export default function Page2() {
+export default function Page2({ compteurState }) {
   return {
     type: "div",
     children: [
@@ -53,7 +53,7 @@ export default function Page2() {
       //    initialValue: 10
       //  }
       //},
-      Compteur({ initialValue: 10 }),
+      Compteur({ initialValue: 10, compteurState }),
     ],
   };
 }
